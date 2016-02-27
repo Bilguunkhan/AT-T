@@ -5,4 +5,5 @@ from django.contrib.auth.models import User
 class UserInfo(models.Model):
 	user               = models.OneToOneField(User, related_name="info", on_delete=models.CASCADE, null=True)
 	location           = models.CharField(max_length=50, blank=True, default='')
+	is_teacher         = models.CharField(max_length=50, blank=True, default='')
 	interested_subject = models.CharField(max_length=50, blank=True, default='')
