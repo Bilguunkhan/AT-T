@@ -1,6 +1,6 @@
 from django.contrib.auth.models import User
 from rest_framework import serializers
-from .models import UserInfo
+from .models import UserInfo, Subject
 
 class UserSerializer(serializers.ModelSerializer):
 	class Meta:
@@ -17,3 +17,8 @@ class UserInfoSerializer(serializers.ModelSerializer):
 	class Meta:
 		model  = UserInfo
 		fields = ('id', 'user', 'location', 'is_teacher', 'interested_subject')
+
+class SubjectSerializer(serializers.ModelSerializer):
+	class Meta:
+		model  = Subject
+		fields = ('id', 'name', 'description')
