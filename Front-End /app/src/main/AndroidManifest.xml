@@ -24,8 +24,12 @@
             android:label="@string/title_activity_tutor"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".Tutee1"
-            android:label="@string/title_activity_tutee1"
+            android:name=".Tutee"
+            android:label="@string/title_activity_tutee"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Math"
+            android:label="@string/title_activity_math"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

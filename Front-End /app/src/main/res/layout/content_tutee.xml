@@ -9,17 +9,23 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.eri.tuber.Tutor"
-    tools:showIn="@layout/activity_tutor"
-    android:background="#141414">
+    tools:context="com.example.eri.tuber.Tutee"
+    tools:showIn="@layout/activity_tutee">
 
-    <TextView
+    <Button
         android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Tutees Available"
-        android:id="@+id/headerTutor"
-        android:textColor="#d7d7d7"
+        android:layout_height="wrap_content"
+        android:text="Math"
+        android:id="@+id/buttonMath"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="113dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Physics"
+        android:id="@+id/buttonPhysics"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>

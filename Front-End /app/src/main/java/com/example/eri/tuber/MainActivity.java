@@ -17,30 +17,29 @@ public class MainActivity extends AppCompatActivity {
 
 
         Button buttonTutor = (Button) findViewById(R.id.buttonTutor);
-
         buttonTutor.setOnClickListener(new View.OnClickListener() {
-
             @Override
-
             public void onClick(View v) {
-
                 goToTutor();
-
             }
-
         });
 
         Button buttonTutee = (Button) findViewById(R.id.buttonTutee);
-
         buttonTutee.setOnClickListener(new View.OnClickListener() {
-
             @Override
-
             public void onClick(View v) {
-
                 goToTutee();
             }
         });
+
+        Button buttonMath = (Button) findViewById(R.id.buttonMath);
+        buttonMath.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                goToMath();
+            }
+        });
+
 
     }
 
@@ -68,19 +67,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void goToTutor() {
-
         Intent intentTutor = new Intent(this, Tutor.class);
-
         startActivity(intentTutor);
-
     }
 
-    private void goToTutee(){
-
-        Intent intentTutee = new Intent(this, Tutee1.class);
-
+    private void goToTutee() {
+        Intent intentTutee = new Intent(this, Tutee.class);
         startActivity(intentTutee);
     }
+
+    private void goToMath() {
+        Intent intentMath = new Intent(this, Math.class);
+        startActivity(intentMath);
+    }
+
+
+
+
+
 }
 
 

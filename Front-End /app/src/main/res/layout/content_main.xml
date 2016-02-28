@@ -11,7 +11,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.example.eri.tuber.MainActivity"
     tools:showIn="@layout/activity_main"
-    android:background="#6b9bb2">
+    android:background="#141414">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,8 +28,8 @@
             android:typeface="monospace"
             android:textColorHint="#9c9c9c"
             android:clickable="true"
-            android:background="#bc7157"
-            android:textColor="#ffffff"
+            android:background="#0e0e0e"
+            android:textColor="#d7d7d7"
             android:layout_centerHorizontal="true"
             android:layout_above="@+id/buttonTutee"
             android:layout_weight="0.45"
@@ -47,8 +47,8 @@
             android:typeface="monospace"
             android:textColorHint="#9c9c9c"
             android:clickable="false"
-            android:background="#b66574"
-            android:textColor="#ffffff"
+            android:background="#0e0e0e"
+            android:textColor="#c5c5c5"
             android:layout_centerVertical="true"
             android:layout_alignLeft="@+id/buttonTutor"
             android:layout_alignStart="@+id/buttonTutor"

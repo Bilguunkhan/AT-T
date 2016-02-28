@@ -2,5 +2,6 @@
     <string name="app_name">Tuber</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_tutor">Tutor</string>
-    <string name="title_activity_tutee1">Tutee1</string>
+    <string name="title_activity_tutee">Tutee</string>
+    <string name="title_activity_math">Math</string>
 </resources>
