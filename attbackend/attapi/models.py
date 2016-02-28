@@ -13,3 +13,8 @@ class Subject(models.Model):
 	learners    = models.ManyToManyField(User, related_name='learn_subjects')
 	name        = models.CharField(max_length=50, blank=True, default='')
 	description = models.CharField(max_length=50, blank=True, default='')
+
+class Notification(models.Model):
+	tutor_user   = models.ForeignKey(User, related_name='tutor_notification')
+	learner_user = models.ForeignKey(User, related_name='learner_notification')
+	subject      = models.ForeignKey(Subject)
