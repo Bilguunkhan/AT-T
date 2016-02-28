@@ -5,7 +5,7 @@ from .models import UserInfo
 class UserSerializer(serializers.ModelSerializer):
 	class Meta:
 		model  = User
-		fields = ('id', 'username', 'email', 'password', 'info')
+		fields = ('id', 'username', 'email', 'password')
 	def create(self, validated_data):
 		user = super(UserSerializer, self).create(validated_data)
 		if 'password' in validated_data:
