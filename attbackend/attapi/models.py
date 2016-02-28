@@ -9,5 +9,7 @@ class UserInfo(models.Model):
 	interested_subject = models.CharField(max_length=50, blank=True, default='')
 
 class Subject(models.Model):
+	tutors      = models.ManyToManyField(User, related_name='tutor_subjects')
+	learners    = models.ManyToManyField(User, related_name='learn_subjects')
 	name        = models.CharField(max_length=50, blank=True, default='')
 	description = models.CharField(max_length=50, blank=True, default='')
